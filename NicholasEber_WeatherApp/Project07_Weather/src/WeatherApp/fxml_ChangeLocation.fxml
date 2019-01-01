@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import validatetextfieldsfxml.custom.*?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" focusTraversable="true" prefHeight="465.0" prefWidth="312.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WeatherApp.ChangeLocationController">
+   <children>
+      <ImageView fx:id="background" fitHeight="497.0" fitWidth="353.0" pickOnBounds="true">
+         <image>
+            <Image url="@Background.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="city" layoutX="82.0" layoutY="220.0" promptText="City" />
+      <Label alignment="CENTER" layoutY="98.0" prefHeight="63.0" prefWidth="312.0" text="New Location" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="state" layoutX="82.0" layoutY="270.0" promptText="State" />
+      <Label layoutX="82.0" layoutY="203.0" prefHeight="17.0" prefWidth="64.0" text="Enter City:" textFill="WHITE" />
+      <Label layoutX="84.0" layoutY="253.0" text="Enter State:" textFill="WHITE" />
+      <Button fx:id="change" layoutX="128.0" layoutY="354.0" mnemonicParsing="false" onAction="#changeButtonAction" text="Change" />
+   </children>
+</AnchorPane>

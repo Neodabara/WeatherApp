@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Project07_Weather.jnlp">
+  <information>
+    <title>Project07_Weather</title>
+    <vendor>nicho</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Project07_Weather.jar" size="180663" download="eager" />
+    <jar href="lib\AbsoluteLayout.jar" size="2847" download="eager" />
+    <jar href="lib\sqlite-jdbc-3.16.1.jar" size="6161579" download="eager" />
+  </resources>
+  <application-desc main-class="WeatherApp.startWeather"  name="Project07_Weather" >
+  </application-desc>
+  <update check="always"/>
+</jnlp>
